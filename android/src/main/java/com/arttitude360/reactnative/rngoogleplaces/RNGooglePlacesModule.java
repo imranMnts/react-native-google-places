@@ -208,6 +208,7 @@ public class RNGooglePlacesModule extends ReactContextBaseJavaModule implements 
     public void getAutocompletePredictions(String query, ReadableMap options, final Promise promise) {
         this.pendingPromise = promise;
 
+        console.log('<<>> hiiiiamina');
         String type = options.getString("type");
         String country = options.getString("country");
         country = country.isEmpty() ? null : country;

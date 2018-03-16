@@ -74,7 +74,7 @@ RCT_EXPORT_METHOD(getAutocompletePredictions: (NSString *)query
                                                  
                                                  for (GMSAutocompletePrediction* result in results) {
                                                      NSMutableDictionary *placeData = [[NSMutableDictionary alloc] init];
-                                                     
+                                                     console.log('<<>> result : ', result);
                                                      placeData[@"fullText"] = result.attributedFullText.string;
                                                      placeData[@"primaryText"] = result.attributedPrimaryText.string;
                                                      placeData[@"secondaryText"] = result.attributedSecondaryText.string;
